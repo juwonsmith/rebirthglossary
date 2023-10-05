@@ -1,0 +1,570 @@
+{
+  "terms": [
+    {
+      "term": "barter",
+      "definition": "exchange (goods or services) for other goods or services without using money. he often bartered a meal for drawings ",
+      "id": 1
+    },
+    {
+      "term": "Agent",
+      "definition": " An agent is an actor or decision maker in an economy. In economics, the term typically includes consumers, producers, households, firms and governments. In this course we will use the term ‘agent’ to describe a partcipant in a DeFi or CeFi system or process.",
+      "id": 2
+    },
+    {
+      "term": "Arbitrage",
+      "definition": " Trading of an asset or derivative security where the price spread between two different markets or exchanges can be exploited to earn ‘riskless’ or ‘certain’ profits. In DeFI this relates to trading in coins or crypto derivatives across different markets or exchanges. Arbitrage trade (usually) facilitates ‘fair’ price discovery by ‘trading away’ price differences between different markets",
+      "id": 3
+    },
+    {
+      "term": "Automated Market Maker (AMM)",
+      "definition": " A decentralized asset trading pool that enables market participants to buy or sell cryptocurrencies. Uniswap is the most well-known AMM.",
+      "id": 4
+    },
+    {
+      "term": "Bitcoin",
+      "definition": " The first cryptocurrency, for which Blockchain was conceived and the forst blockchain platform created",
+      "id": 5
+    },
+    {
+      "term": "Blockchain",
+      "definition": " A distributed, immutable permanent record or ledger of all transactions since the beginning of a cryptocurrency coin or token.",
+      "id": 6
+    },
+    {
+      "term": "CeFi",
+      "definition": " ‘Centralised Finance’, in other words traditional or conventional finance methods and markets. From a DeFi perspective, CeFi is represented by centralized cryptocurrency exchanges, businesses, or organizations with a physical address, and usually with some sort of corporate structure like traditional financial market participants (banks, investment banks, exchanges, fund managers and so on). CeFi business are also generally subject to applicable laws, codes of practice and regulations of the jurisdictions in which they operate.",
+      "id": 7
+    },
+    {
+      "term": "CEX",
+      "definition": " A CEX is a Centralized Exchange, with a physical address and a corporate structure, subject to applicable laws, codes of practice and regulations of the jurisdictions in which it operates.",
+      "id": 8
+    },
+    {
+      "term": "Coin",
+      "definition": " A unit of digital currency. Coins are secured by encryption algorithms. Coins can be divisible and ownership can represent a share of the ownership and/or governance of a coin, token, protocol, company, or project.",
+      "id": 9
+    },
+    {
+      "term": "Collateral",
+      "definition": " In DeFi, collateral refers to the offer of one cryptocurrency or token as ‘collateral’ to secure a borrowing a different cryptocurrency or token.",
+      "id": 10
+    },
+    {
+      "term": "Composability",
+      "definition": " A measure of the usability and ability of a DeFi or crypto product to be used as a building block (or “money lego”) in the construction of other products or domains. A protocol that is simple, powerful, and that functions well with other protocols would be considered to have high composability.",
+      "id": 11
+    },
+    {
+      "term": "Compound",
+      "definition": " A DeFi platform, based on a DAO. According to Compund’s own descrition it is ‘an algorithmic, autonomous interest rate protocol built for developers, to unlock a universe of open financial applications”.",
+      "id": 12
+    },
+    {
+      "term": "Curve",
+      "definition": " A decentralized stablecoin Automated Market Maker (AMM), that offers trades among stablecoins and other synthetic assets on the Ethereum blockchain.",
+      "id": 13
+    },
+    {
+      "term": "DAO",
+      "definition": " Distributed Autonomous Organization. Can be defined as an ‘organisation’ on a blockchain, represented by a set of rules encoded as a computer program (on a blockchain) that is transparent, controlled by the organization members and not influenced by a central government.",
+      "id": 14
+    },
+    {
+      "term": "dApp",
+      "definition": " A decentralized Web3 software application that normally runs on a blockchain.",
+      "id": 15
+    },
+    {
+      "term": "DEX",
+      "definition": " A DEX is a distributed exchange. The term is used widely in IT and in specialised markets (energy, for example). In DeFi a DEX is a type of cryptocurrency exchange that allows for direct peer-to-peer cryptocurrency transactions to take place online securely and without the need for an intermediary.",
+      "id": 16
+    },
+    {
+      "term": "Discord",
+      "definition": " Discord is a real-time chat platform initially built for gamers. It has been widely adopted by defi and blockchain enthusiasts to share information and build communities.",
+      "id": 17
+    },
+    {
+      "term": "Ethereum",
+      "definition": " Bitcoin is the original cryptocurrency but its blockchain is limited to one use — recording transactions to do with Bitcoin. Ethereum launched in July 2015, allows for much more complexity using smart contracts, its own design protocols and programming language.",
+      "id": 18
+    },
+    {
+      "term": "ERC-20",
+      "definition": " A cryptocurrency protocol based on the Ethereum blockchain. An ERC-20 coin, by definition, uses this protocol.",
+      "id": 19
+    },
+    {
+      "term": "Fiat Money",
+      "definition": " Fiat money is a government-issued currency that is not backed by a physical commodity, such as gold or silver, but rather by the government that issued it. Fiat currency is legal tender in (at least) its home jurisdiction, whereas many or most cryptocurrencies are not.",
+      "id": 20
+    },
+    {
+      "term": "Flash Loan",
+      "definition": " A type of loan that is only possible in the world of cryptocurrencies. A Flash Loan is a type of loan where the asset, often Ethereum or an ERC-20 coin, is loaned out only for the duration of the length of time it takes to complete one transaction block on the blockchain. As long as the loan is paid back before the next transaction block begins there is no interest fee incurred by the borrower.",
+      "id": 21
+    },
+    {
+      "term": "Gas Fees",
+      "definition": " Gas Fees are the fees that Ethereum miners receive to process and validate transactions on the Ethereum blockchain. They are levied in the native token ETH and usually broken down into tiny increments called Gwei.",
+      "id": 22
+    },
+    {
+      "term": "Governance and Governance Tokens",
+      "definition": " Governance refers to determining, maintaining, adapting and enforcing the rules of a blockchain ecosystem, product, project or DAO. It specifically refers to control and use of a Governance coin or token that carries the right to take part in governance processes.",
+      "id": 23
+    },
+    {
+      "term": "HODL/HODLer/HODling",
+      "definition": " HODL was initially a spelling error of ‘hold’ that became a term that was embraced as an inside joke by the early adopters of Bitcoin and Ethereum. The choice or decision to ride out volatility and hold onto one’s crypto investments through bull and bear markets is called HODLing. A HODLer is a person that HODLs.",
+      "id": 24
+    },
+    {
+      "term": "Impermanent Loss",
+      "definition": " In AMMs, lending providers (LPs) contribute assets to provide liquidity for market participants. LPs occasionally will not receive the exact amount of assets upon withdrawal. The dollar value of the assets they withdraw would typically be lower than if they had no provided liquidity and just held the assets. This dollar value shortfall is known as impermanent loss. The loss is said to be ‘impermanent’ because if asset prices return to the level during withdrawal the loss is eliminated.",
+      "id": 25
+    },
+    {
+      "term": "Leverage",
+      "definition": " In CeFi leverage means borrowing or using multipliers such as margin functions to amplify gains on trading. In DeFi it more specifically refers to the use of multipliers on exchanges eg: providing 1 Bitcoin (BTC) deposit on such an exchange could provide the investment power of 10 to 100 BTC if used at 10x to 100x leverage. Leveraged trades can amplify gains greatly but can also amplify losses as much or more on loss-making trades.",
+      "id": 26
+    },
+    {
+      "term": "Legos (or Money Lego)",
+      "definition": " A fundamental tenet of the DeFi space is building for interoperability. This allows the ecosystem to benefit from individual progress, pushing decentralized finance continually forward. As participants build useful things, they are able to be shared and combined in new ways, reminiscent of everyone’s favourite toy, Lego. When new people dive into the Lego ‘bin’, they find individual legos or preassembled combinations of Legos that they too start building with, creating bigger and better things.",
+      "id": 27
+    },
+    {
+      "term": "Liquidity",
+      "definition": " Liquidity measures the circulating supply and how much trading activity there in an exchange, economy, or network. A currency with low supply and/or circulation is said to be illiquid.",
+      "id": 28
+    },
+    {
+      "term": "Liquidity Mining",
+      "definition": " A form of cryptocurrency mining that supports work and transactions on a blockchain. Rewards are designed-in to incentivize liquidity mining providers, in addition to growing and supporting a blockchain’s user base.",
+      "id": 29
+    },
+    {
+      "term": "Liquidity Pools",
+      "definition": " A Liquidity Pool (LP) is a pool of deposited funds meant to provide liquidity to a currency, network, or Smart Contract. There are usually designed rewards or incentives given to those who provide liquidity to LPs. See also Liquidity Mining.",
+      "id": 30
+    },
+    {
+      "term": "Maker, MakerDAO and DAI",
+      "definition": " Maker is a decentralized, governed financial ecosystem based on a Stablecoin called DAI. DAI is algorithmically pegged to $1 USD, with no volatility. The MakerDAO is a smart contract which runs on the Ethereum blockchain.",
+      "id": 31
+    },
+    {
+      "term": "Metamask",
+      "definition": " A popular mobile or desktop software cryptocurrency wallet that can hold, transmit or receive Ethereum and ERC-20 compatible coins or tokens.",
+      "id": 32
+    },
+    {
+      "term": "Mining Pool",
+      "definition": " A pool of cryptocurrency miners that provides mining services to a cryptocurrency network. Mining Pool operators and contributors are incentivized by a coin or token’s programmed mining rewards to support transactions and provide liquidity on a coin’s network.",
+      "id": 33
+    },
+    {
+      "term": "Multisig Wallet",
+      "definition": " A type of cryptocurrency wallet that controls access and changes to one or more Smart Contracts. Community governed projects like a DAO often require multiple signers to approve a transaction before it will be executed.",
+      "id": 34
+    },
+    {
+      "term": "Oracle",
+      "definition": " A trusted feed of data, such as the current market prices of an asset or assets, that provides confidence to users that the data are timely, accurate, and untampered.",
+      "id": 35
+    },
+    {
+      "term": "Pump and Dump",
+      "definition": " The term “pump and dump” refers to buyers piling into a cryptocurrency or token to inflate its price and then selling it all at once, which causes the price to crash. In CeFi, pump and dump schemes are often illegal.",
+      "id": 36
+    },
+    {
+      "term": "Primitive",
+      "definition": " A generic building block, similar to ‘Legos’. Financial Primitives are cryptocurrency-based financial generic building blocks designed to efficiently and reliably perform one task.Protocol: A set of developed rules or specifications that detail definitions, features, standards, limitations, and potential stipulations of a high-technology product or project. Well-known technology protocols include TCP/IP and ERC-20.",
+      "id": 37
+    },
+    {
+      "term": "Slippage",
+      "definition": " In crypto trade, slippage refers to a difference in price between buyer and seller expectations. Slippage can lead to a final sale price of the asset that is either more or less than the requested transaction amount.",
+      "id": 38
+    },
+    {
+      "term": "Stablecoins",
+      "definition": " A stablecoin is a cryptocurrency that has its value pegged to the value of a stable asset. Stable coins are most commonly pegged to the US Dollar but can be pegged to other assets like gold or a basket of crypto assets",
+      "id": 39
+    },
+    {
+      "term": "Stake/Staking",
+      "definition": " The act of depositing a cryptocurrency coin or token into a yield farming project and/or protocol, whether the access to the project is either through CeFi or DeFi methods.",
+      "id": 40
+    },
+    {
+      "term": "Testnet",
+      "definition": " A testing network for a new coin, project, or product, or for potential improvements to an existing product or offering. A testnet can also be used by newcomers to ‘practice’ activities like staking and trading.",
+      "id": 41
+    },
+    {
+      "term": "Tokens",
+      "definition": " Similar to a type of coin but with much greater functionality. Tokens can also be used as a method of payment like coins, but unlike coins, they can excel at other use cases such as the democratic governance of a protocol or system, or as a means to use underlying coins to make liquidity tokens from these coin deposits.",
+      "id": 42
+    },
+    {
+      "term": "TVL/TLV",
+      "definition": " The Total Value Locked (TVL), sometimes also called Total Locked Value (TLV) is a measure of the dollar value of all the investor deposits in coins or tokens locked into a platform, protocol, lending program, yield farming program, or insurance liquidity pool.",
+      "id": 43
+    },
+    {
+      "term": "Uniswap",
+      "definition": " Uniswap is a decentralized finance protocol that is used to exchange cryptocurrencies. The Uniswap exchange is an automated market maker. This is a type of decentralized exchange that offers various pairs of tokens for trading and liquidity provision.",
+      "id": 44
+    },
+    {
+      "term": "Wallet",
+      "definition": ": A software application or hardware cryptocurrency wallet that can hold a variety of coins.",
+      "id": 45
+    },
+    {
+      "term": "Whale",
+      "definition": " A person who HODLs a large amount of cryptocurrency or cryptocurrencies.",
+      "id": 46
+    },
+
+    {
+      "term": "712 — signed approval",
+      "definition": "An abstraction method for ERC20 tokens that allows transaction fees to be paid using the token itself rather than ETH,andpermits approvals in a single transaction (instead of two consecutive transactions).",
+      "id": 49
+    },
+    {
+      "term": "Airdrop",
+      "definition": "A distribution of tokens to various users of a network, often with the sole intent of on-boarding and/or providing existing users with value or governance voting rights.",
+      "id": 50
+    },
+    {
+      "term": "Anti-money Laundering (AML)",
+      "definition": "A set of practices or policies that centralized entities use to comply with local and federal laws and regulations. These procedures are designed to identify, report, and prevent illicit financial activity.",
+      "id": 51
+    },
+    {
+      "term": "Annual Percentage Yield (APY)",
+      "definition": "The compounded annual rate of return on capital locked within a protocol. (i.e. liquidity pools or 1inch liquidity mining program)",
+      "id": 52
+    },
+    {
+      "term": "Approval",
+      "definition": "The act of giving permission to the 1inch smart contract to spend your assets. The miners of the network are compensated with a gas fee (paid by you) to record this action on the blockchain.",
+      "id": 53
+    },
+    {
+      "term": "Arbitrage",
+      "definition": "The act of buying the same asset in one market to sell in another, with the goal of profiting from the price difference of both markets.",
+      "id": 54
+    },
+    {
+      "term": "Automated Market Maker (AMM)",
+      "definition": " A decentralized pricing mechanism that uses mathematical formulas (most commonly x*y=k) to regulate the supply of assets within a liquidity pool.",
+      "id": 55
+    },
+    {
+      "term": "Binance Smart Chain (BEP20)",
+      "definition": " An independent blockchain built by Binance that is designed to be faster, gas efficient, and compatible with the Ethereum Virtual Machine. BEP20 is the standard that binds all tokens on the Binance Smart Chain to the same rules when interacting with each other and smart contracts.",
+      "id": 56
+    },
+    {
+      "term": "Block Explorer",
+      "definition": "A tool for searching and exploring all publicly available information on a particular blockchain.",
+      "id": 57
+    },
+    {
+      "term": "Block Reward",
+      "definition": "Newly minted tokens or coins that are distributed to a miner/validator in exchange for verifying transactions within a block (on a blockchain). Block rewards are implemented within all mainstream consensus mechanisms.",
+      "id": 58
+    },
+    {
+      "term": "Bridge",
+      "definition": "A decentralized connection protocol that allows tokens with the same contract addresses on different blockchains to be converted from one network to another.",
+      "id": 59
+    },
+    {
+      "term": "Chi gastoken",
+      "definition": "CHI both an ERC20 and BEP20 token aimed to help reduce 1inch users’ transaction fees. CHI is available on both Ethereum and BNB Chain, and is pegged to the Ethereum and BNB Chain network’s gas price respectively. ***Please note: Due to the EIP1559 hard fork, CHI no longer works as a gas token.",
+      "id": 60
+    },
+    {
+      "term": "Cold Wallet",
+      "definition": "A digital asset wallet that is maintained offline. Also known as “Cold Storage” this method can consist of storing the private key on physical paper (paper wallet) on a secure hardware device (such as aLedgerorTrezor), or even through memorization of the key or recovery phrase!",
+      "id": 61
+    },
+    {
+      "term": "Consensus",
+      "definition": "The moment that is achieved when all nodes on a network come to agreement in about the verification and order of transactions within a block.",
+      "id": 62
+    },
+    {
+      "term": "Custom token",
+      "definition": "Any ERC20, BEP20, or MRC20 token that is notwhitelistedon 1inch Network.",
+      "id": 63
+    },
+    {
+      "term": "Decentralized Autonomous Organization (DAO)",
+      "definition": "A decentralized system of governance that enables 1INCH stakers and community members to vote for key protocol parameters and assume responsibility for network implementation.",
+      "id": 64
+    },
+    {
+      "term": "Decentralized Application dApp",
+      "definition": "A computer application that runs on top of a distributed network, providing an interface for users to interact with blockchains and associated smart contracts.",
+      "id": 65
+    },
+    {
+      "term": "Decentralized Exchange (DEX)",
+      "definition": "A blockchain-based, peer-to-peer trading platform that allows users to exchange value with each other in an open, permissionless environment.",
+      "id": 66
+    },
+    {
+      "term": "Derivative",
+      "definition": "A derivative is a secondary asset who’s value is derived from a primary asset or basket of assets. In DeFi this can refer to synthetic futures, options, prediction markets etc.",
+      "id": 67
+    },
+    {
+      "term": "Dex Aggregator",
+      "definition": "A decentralized network protocol that gives users access to liquidity across many DEXes, all in one simple interface. Through efficient routing, a DEX aggregator can effectively reduce slippage, swap fees, and token prices for users.",
+      "id": 68
+    },
+    {
+      "term": "Ethereum (ERC20)",
+      "definition": "Ethereum is an open-source, smart contract compatible blockchain designed by Vitalik Buterin. ERC20 is the standard that binds all tokens on Ethereum to the same rules when interacting with each other and smart contracts.",
+      "id": 69
+    },
+    {
+      "term": "Fiat Currency",
+      "definition": "Any currency who’s value is backed solely by decree and mandated to be legal tender by a nation-state or government. Examples of fiat currencies are: the United States Dollar, the European Euro, the Mexican Peso and the Chinese Yuan.",
+      "id": 70
+    },
+    {
+      "term": "FOMO",
+      "definition": "An acronym for “Fear of Missing Out”, FOMO is a feeling that novice traders get when the price of an asset (that they don’t hold) increases.",
+      "id": 71
+    },
+    {
+      "term": "Gas Fees",
+      "definition": "A blockchain transaction fee that compensates validators for their computational and/or capital costs of verifying transactions and adding blocks to the network.",
+      "id": 72
+    },
+    {
+      "term": "Gas Limit",
+      "definition": "The maximum amount in blockchain gas fees a user is willing to pay for an individual transaction. This amount can becustom tailored within the 1inch Wallet.",
+      "id": 73
+    },
+    {
+      "term": "Governance Staking",
+      "definition": "A form of staking where community members can lock up their 1inch tokens in exchange for the right to vote on various parameters of DeFi protocols.(Note: 1inch Network does not issue governance staking rewards)",
+      "id": 74
+    },
+    {
+      "term": "Governance Token",
+      "definition": "A governance token is a token specifically designed to act as a unit of legislation. These tokens are used by “stakeholders” to vote on the direction of a protocol’s development. While some people speculate on governance token values and trade them on open markets, these tokens have no utility aside from legislation and voting rights.",
+      "id": 75
+    },
+    {
+      "term": "Hardware Wallet",
+      "definition": "A piece of secure hardware that is capable of storing digital assets and can be completely disconnected from the internet. Hardware wallets are considered to be one of the most secure methods for storing assets.",
+      "id": 76
+    },
+    {
+      "term": "HODL",
+      "definition": "An acronym for “Hold on for Dear Life!”, which is primarily used amongst token holders as the price of their assets decreases significantly.",
+      "id": 77
+    },
+    {
+      "term": "Honeypot",
+      "definition": "A common type of scam token, where the contract creator places elaborate traps within the contract code to prevent speculators from selling their recently purchased token.",
+      "id": 78
+    },
+    {
+      "term": "Impermanent Loss",
+      "definition": "The temporary reduction of a liquidity provider’s funds due to an imbalance of supply within a liquidity pool. This imbalance is caused by volatility between the pair of tokens provided.",
+      "id": 79
+    },
+    {
+      "term": "Internal Commission",
+      "definition": "A token’s built-in fee structure that automatically redirects a portion of tokens during transfer. Oftentimes, internal commission is sent to a burn address, development fund, or distributed to a community of token holders.",
+      "id": 80
+    },
+    {
+      "term": "KYC",
+      "definition": "An acronym for “Know Your Customer”, KYC is the process in which a financial institution requires a customer/user to provide multiple levels of identification in order to participate in offered services.",
+      "id": 81
+    },
+    {
+      "term": "Limit Order",
+      "definition": "A limit order is an order to buy or sell tokens at a specified price.",
+      "id": 82
+    },
+    {
+      "term": "Liquidity Pool",
+      "definition": "A smart contract designed to hold a supply of tokens for trading, which is regulated by an automated market maker (AMM). Each trade/swap through the pool generates a small fee which is distributed to Liquidity Providers as an incentive for providing liquidity.",
+      "id": 83
+    },
+    {
+      "term": "Liquidity Provider (LP)",
+      "definition": "A token holder who provides liquidity (in equal amounts of a pair of tokens) to a pool, with the intention of receiving a portion of trading fees as a reward.",
+      "id": 84
+    },
+    {
+      "term": "Liquidity Source",
+      "definition": "A source of liquidity for a swap, these can include native liquidity pools, decentralized exchanges, centralized financial institutions, and private market makers.",
+      "id": 85
+    },
+    {
+      "term": "LP Tokens",
+      "definition": "Also known as “Liquidity Provider Tokens”, these tokens are minted and distributed to a liquidity provider as a “placeholder” for their liquidity. To help offset impermanent loss, LP tokens can be used to generate additional rewards in various liquidity mining programs.",
+      "id": 86
+    },
+    {
+      "term": "Market Order",
+      "definition": "An order to buy or sell tokens at the current market price.",
+      "id": 87
+    },
+    {
+      "term": "Maximal Extractable Value (MEV)",
+      "definition": "Previously known as “Miner Extractable Value”, this term represents the activity of blockchain validators manipulating transactions within a block to extract maximum value from a sender/receiver.",
+      "id": 88
+    },
+    {
+      "term": "Non-fungible Token (NFT)",
+      "definition": "A blockchain-based digital asset that represents a single unit which cannot be replicated or interchanged with any other asset. Most commonly tied to items like art, music, and content, NFTs open the door of possibility to connect the value of any real world item to a blockchain network.",
+      "id": 89
+    },
+    {
+      "term": "Off-Chain",
+      "definition": "Any external system or process that occurs separately from a blockchain.",
+      "id": 90
+    },
+    {
+      "term": "On-Chain",
+      "definition": "Any external system or process that occurs directly on a blockchain, and can be publicly viewed on a block explorer.",
+      "id": 91
+    },
+    {
+      "term": "Oracle",
+      "definition": "An external data source that conveys information (i.e. price) to a protocol.",
+      "id": 92
+    },
+    {
+      "term": "Over the Counter (OTC)",
+      "definition": "A decentralized broker-dealer network through which market participants can trade currencies, stocks, securities or other financial products directly, without the need for a centralized exchange.",
+      "id": 93
+    },
+    {
+      "term": "Partial Fill",
+      "definition": "A 1inch swap setting that allows an order to partially fill when the rate changes beyond the allotted slippage tolerance.",
+      "id": 94
+    },
+    {
+      "term": "Permissionless",
+      "definition": "The state of an open source blockchain that allows any participant to create an address and partake in activities of the network.",
+      "id": 95
+    },
+    {
+      "term": "Polygon (MRC20)",
+      "definition": "A layer 2 blockchain that is designed to be scalable, gas efficient, and compatible with the Ethereum Virtual Machine. MRC20 is the standard that binds all tokens on the Polygon chain to the same rules when interacting with each other and smart contracts.",
+      "id": 96
+    },
+    {
+      "term": "Price Impact",
+      "definition": "Price impact is the influence that a trade has over the market price of the underlying asset pair. It is directly correlated with the amount of liquidity/volume in the pool.",
+      "id": 97
+    },
+    {
+      "term": "Price Slippage",
+      "definition": "Slippage is the difference in prices between the time a market order is placed, and the time it completes on the blockchain or is filled. Slippage can either be positive or negative, depending on the direction of price change.",
+      "id": 98
+    },
+    {
+      "term": "Private Key",
+      "definition": "A unique and random string of 64 hex characters that is used to access funds with a wallet. Similar to a recovery phrase, funds within a wallet cannot be moved without the private key.***NEVER SHARE YOUR PRIVATE KEY WITH ANYONE!",
+      "id": 99
+    },
+    {
+      "term": "Public / Receive Address",
+      "definition": "A public address consisting of 42 random characters that is used by a sender to transfer funds to. The public address can be shared with anyone, and commonly found in a QR code format.",
+      "id": 100
+    },
+    {
+      "term": "Referral Reward",
+      "definition": "A reward that is given to users who refer others to use the 1inch Liquidity Protocol. This reward amount is voted upon by the community, and is distributed to users on a weekly basis. If a trade was routed through other protocols (Liquidity Sources), referrers may also receive a part of the spread surplus if available.",
+      "id": 101
+    },
+    {
+      "term": "Rug Pull",
+      "definition": "A very common scam tactic, where an initial liquidity provider (or token creator) suddenly withdraws a majority of their liquidity from the pool, effectively stealing funds from speculators who bought the now worthless token.",
+      "id": 102
+    },
+    {
+      "term": "Sandwich attack",
+      "definition": "A variation of front-running, where an attacker sees a sizable transaction waiting in the mempool, then places a significantly larger transaction (with the same tokens) directly before and after the victim’s transaction. This drives the rate of the victim’s transaction up, effectively allowing the front runner to extract the difference in value.",
+      "id": 103
+    },
+    {
+      "term": "Slippage Tolerance",
+      "definition": "The amount of slippage, in % terms, that you are willing to allow for a trade.",
+      "id": 104
+    },
+    {
+      "term": "Smart Contract",
+      "definition": "A blockchain-based mechanism that executes specific actions when predetermined conditions are met.",
+      "id": 105
+    },
+    {
+      "term": "Sniper Bot",
+      "definition": "A bot used by speculators that automatically buys newly added tokens immediately as the initial liquidity is added to their pool.",
+      "id": 106
+    },
+    {
+      "term": "Stablecoin",
+      "definition": "A token that is designed to be stable in relation to the price of another currency or asset.",
+      "id": 107
+    },
+    {
+      "term": "Swap",
+      "definition": "The act of transferring one asset in return for another at a designated rate.",
+      "id": 108
+    },
+    {
+      "term": "Swap Fee",
+      "definition": "A small fee associated with each swap that is distributed to and voted upon by governance stakers on 1inch Network.",
+      "id": 109
+    },
+    {
+      "term": "Synthetic Token",
+      "definition": "A type of derivative token that represents value from underlying collateral.",
+      "id": 110
+    },
+    {
+      "term": "Tokenomics",
+      "definition": "The economics of a token, which commonly include, circulating supply, distribution amounts and schedules, mint and burn mechanics, internal commission, and more.",
+      "id": 111
+    },
+    {
+      "term": "Total Value Locked (TVL)",
+      "definition": "Also known as “Gross Value Locked”. The amount of value locked or staked into a specific protocol, typically expressed in USD or fiat terms.",
+      "id": 112
+    },
+    {
+      "term": "Wallet",
+      "definition": "The place where users store, send, and receive tokens or other forms of value (such as NFTs)",
+      "id": 113
+    },
+    {
+      "term": "Whitelisted token",
+      "definition": "A token that has passed the rigorous process of review by the 1inch Foundation. All non-whitelisted tokens are considered “custom tokens” and are to be traded at the users’ own risk.",
+      "id": 114
+    },
+    {
+      "term": "Yield Farm",
+      "definition": "Also known as a liquidity mining program, a yield farm is a program that allows liquidity providers to stake their LP tokens and earn additional rewards. These rewards act as an incentive to liquidity providers to keep their liquidity in the pool by minimizing the impact of impermanent loss and leveraging their existing capital.",
+      "id": 115
+    }
+  ]
+}

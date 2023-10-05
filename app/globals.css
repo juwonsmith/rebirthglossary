@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.caret {
+  @apply w-6 h-6 cursor-pointer;
+}
+.caret-selected {
+  @apply block;
+}
+.pagination {
+  @apply list-none w-full h-16 flex justify-center items-center mb-[40] text-[0.8em] gap-[5px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* come back later */
+.pagination .page-num {
+  @apply px-[5px] py-[5px] cursor-pointer text-blue-700 rounded-md font-normal w-[5px] h-[5px] max-w-[5px] max-h-[5px] bg-[#1c1b1e];
+}
+.pagination .page-num:hover {
+  filter: invert(40%);
+}
+.pagination .active {
+  background-color: red;
+}
+
+/* Define the animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Apply the animation to the list items */
+.gradient-animation {
+  background: linear-gradient(90deg, #03303f, rgba(0, 166, 255, 0.419));
+  background-size: 200% 200%;
+  animation: gradientMove 4s linear infinite;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  list-style: none;
+  border-radius: 5px;
 }
