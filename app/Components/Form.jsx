@@ -1,16 +1,16 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useStore } from "../store/useStore";
 
 export default function Form() {
   const setSearchItem = useStore((state) => state.setSearchItem);
 
   const [item, setItem] = useState("");
-
+  const inputRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       // When scrolling occurs, blur the input field
-      document.activeElement.blur();
+      inputRef.current.blur();
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,6 +19,8 @@ export default function Form() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {}, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +36,7 @@ export default function Form() {
             className="w-[13rem] ssm:w-[17rem] md:w-[25rem] h-12 text-black rounded-md font-mono p-2"
             placeholder="search keyword here"
             value={item}
+            ref={inputRef}
             onChange={(e) => {
               setItem(e.target.value);
               setSearchItem(e.target.value);
