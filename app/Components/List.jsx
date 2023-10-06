@@ -1,13 +1,10 @@
 "use client";
-import UseFetch from "../hooks/useFetch";
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
+import data from "../data/db.json";
 import { useStore } from "../store/useStore";
 
 export default function List() {
-  const { data, ispending, error } = UseFetch("http://localhost:3000/terms");
-  const [def, setdef] = useState(false);
-  // const [ID, setID] = useState(null);
   const [openItem, setOpenItem] = useState(null);
 
   const searchitem = useStore((state) => state.searchitem);
@@ -15,8 +12,6 @@ export default function List() {
   const pattern = new RegExp(searchitem, "i");
 
   const handleCLick = (id) => {
-    // setdef(!def);
-    // setID((formid) => (formid == id ? id : null));
     if (openItem === id) {
       setOpenItem(null);
     } else {
@@ -69,11 +64,6 @@ export default function List() {
   return (
     <div className="w-full h-full">
       <div className="mt-10 mb-10 bg-gradient-to-l from-[#0679e04d] to-[#0636e04d] shadow-white shadow-lg  mx-auto rounded-md h-max w-[calc(100%-8em)] sm:w-[calc(100%-20em)] lg:w-[calc(100%-40em)]">
-        {ispending && (
-          <h1 className="font-bold w-full p-2 text-center">Loading...</h1>
-        )}
-        {error && <h1 style="font-bold w-full p-2 text-cente">{error}</h1>}
-
         <div className="flex flex-col gap-4  w-full h-max list-none p-8">
           {searchitem &&
             data &&
@@ -148,7 +138,7 @@ export default function List() {
         </div>
 
         <div className="mx-auto w-max h-max flex items-center justify-center ">
-          {/* {test && (
+          {test && (
             <ReactPaginate
               breakLabel="..."
               nextLabel={curr === pageCount ? "" : ">>>"}
@@ -163,8 +153,7 @@ export default function List() {
               nextLinkClassName="page-num"
               activeLinkClassName="active"
             />
-          )} */}
-          <p>Hello world</p>
+          )}
         </div>
       </div>
     </div>
