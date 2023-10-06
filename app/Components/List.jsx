@@ -107,7 +107,7 @@ export default function List() {
                   </svg>
                 </li>
                 {openItem === item.id && (
-                  <div className="block">
+                  <div className="block text-center">
                     <p>{item.definition}</p>
                   </div>
                 )}
