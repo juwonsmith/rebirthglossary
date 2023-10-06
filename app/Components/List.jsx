@@ -21,7 +21,6 @@ export default function List() {
 
   //trying pagination
   const [currentList, setCurrentList] = useState([]);
-  const [test, setTest] = useState(true);
   const [pageCount, setPageCount] = useState(0);
   const [bookOffset, setbookOffset] = useState(0);
   const [curr, setCurr] = useState(1);
@@ -33,13 +32,6 @@ export default function List() {
       setPageCount(Math.ceil(data.length / booksPerPage));
     }
   }, [bookOffset, booksPerPage, data]);
-  useEffect(() => {
-    setTest(
-      currentList.length >= booksPerPage || curr > 1 || pageCount > 1
-        ? true
-        : false
-    );
-  }, [currentList, pageCount, curr]);
 
   useEffect(() => {
     if (currentList.length === 0 && pageCount >= 1 && data.length >= 6) {
@@ -138,22 +130,20 @@ export default function List() {
         </div>
 
         <div className="mx-auto w-max h-max flex items-center justify-center ">
-          {test && (
-            <ReactPaginate
-              breakLabel="..."
-              nextLabel={curr === pageCount ? "" : ">>>"}
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={2}
-              pageCount={4}
-              previousLabel={curr === 1 ? "" : "<<<"}
-              renderOnZeroPageCount={null}
-              containerClassName="pagination"
-              pageLinkClassName="page-num"
-              previousLinkClassName="page-num"
-              nextLinkClassName="page-num"
-              activeLinkClassName="active"
-            />
-          )}
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel={curr === pageCount ? "" : ">>>"}
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={2}
+            pageCount={pageCount}
+            previousLabel={curr === 1 ? "" : "<<<"}
+            renderOnZeroPageCount={null}
+            containerClassName="pagination"
+            pageLinkClassName="page-num"
+            previousLinkClassName="page-num"
+            nextLinkClassName="page-num"
+            activeLinkClassName="active"
+          />
         </div>
       </div>
     </div>
