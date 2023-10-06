@@ -24,7 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${roboto_mono.variable}`}>
+      <body
+        className={`${nunito.variable} ${roboto_mono.variable} bg-back bg-cover bg-no-repeat`}
+      >
         <Nav />
         {children}
       </body>
