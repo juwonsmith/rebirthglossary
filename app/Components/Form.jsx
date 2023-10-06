@@ -12,21 +12,19 @@ export default function Form() {
   };
 
   const handleScroll = () => {
-    // Check if the input element exists and is focused, then blur it
-    if (inputRef.current && inputRef.current === document.activeElement) {
+    if (shouldFocusInput && inputRef.current) {
       inputRef.current.blur();
+      setShouldFocusInput(false);
     }
   };
 
   useEffect(() => {
-    // Add scroll event listener to the window
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      // Remove the scroll event listener when the component unmounts
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [shouldFocusInput]);
 
   return (
     <div>
