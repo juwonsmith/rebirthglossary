@@ -4,7 +4,6 @@ import { useStore } from "../store/useStore";
 export default function Form() {
   const setSearchItem = useStore((state) => state.setSearchItem);
   const inputRef = useRef(null);
-  const [shouldFocusInput, setShouldFocusInput] = useState(true);
   const [item, setItem] = useState("");
 
   const handleSubmit = (e) => {
@@ -13,10 +12,9 @@ export default function Form() {
   };
 
   const handleScroll = () => {
-    // Check if the input element should be focused, then blur it
-    if (shouldFocusInput && inputRef.current) {
+    // Check if the input element exists and is focused, then blur it
+    if (inputRef.current && inputRef.current === document.activeElement) {
       inputRef.current.blur();
-      setShouldFocusInput(false); // Update state to prevent further focus
     }
   };
 
@@ -45,7 +43,6 @@ export default function Form() {
               setItem(e.target.value);
               setSearchItem(e.target.value);
             }}
-            onFocus={() => setShouldFocusInput(true)}
           />
           <button
             className="w-[13rem] ssm:w-[17rem] md:w-[25rem] h-10 font-nunito rounded-md 
