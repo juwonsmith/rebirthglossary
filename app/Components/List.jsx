@@ -144,7 +144,7 @@ export default function List() {
               nextLabel={curr === pageCount ? "" : ">>>"}
               onPageChange={handlePageClick}
               pageRangeDisplayed={2}
-              pageCount={Number(pageCount)}
+              pageCount={4}
               previousLabel={curr === 1 ? "" : "<<<"}
               renderOnZeroPageCount={null}
               containerClassName="pagination"
