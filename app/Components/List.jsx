@@ -1,8 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
-import ReactPaginate from "react-paginate";
+import { useState } from "react";
 import data from "../data/db.json";
 import { useStore } from "../store/useStore";
+
+const itemsPerPage = 25;
 
 export default function List() {
   const [openItem, setOpenItem] = useState(null);
@@ -20,31 +21,16 @@ export default function List() {
   };
 
   //trying pagination
-  const [currentList, setCurrentList] = useState([]);
-  const [pageCount, setPageCount] = useState(0);
-  const [bookOffset, setbookOffset] = useState(0);
-  const [curr, setCurr] = useState(1);
-  const booksPerPage = 25;
-  useEffect(() => {
-    if (data) {
-      const endOffset = bookOffset + booksPerPage;
-      setCurrentList(data.slice(bookOffset, endOffset));
-      setPageCount(Math.ceil(data.length / booksPerPage));
-    }
-  }, [bookOffset, booksPerPage, data]);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
-    if (currentList.length === 0 && pageCount >= 1 && data.length >= 6) {
-      setbookOffset((prev) => prev - 6);
-      setCurr((curr) => curr - 1);
-    }
-  }, [currentList, pageCount, data]);
-
-  const handlePageClick = (eve) => {
-    const newOffset = (eve.selected * booksPerPage) % data.length;
-    setbookOffset(newOffset);
-    setCurr(eve.selected + 1);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
   };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const paginatedData = data.slice(startIndex, endIndex);
 
   const check = (array) => {
     if (array.length !== 0) {
@@ -54,8 +40,8 @@ export default function List() {
     }
   };
   return (
-    <div className="w-full h-full">
-      <div className="mt-10 mb-10 bg-gradient-to-l from-[#0679e04d] to-[#0636e04d] shadow-white shadow-lg  mx-auto rounded-md h-max w-[calc(100%-8em)] sm:w-[calc(100%-20em)] lg:w-[calc(100%-40em)]">
+    <div className="w-full h-full overflow-hidden">
+      <div className="mt-10 mb-10 bg-gradient-to-l overflow-hidden from-[#0679e04d] to-[#0636e04d] shadow-white shadow-lg  mx-auto rounded-md h-max w-[calc(100%-8em)] sm:w-[calc(100%-20em)] lg:w-[calc(100%-40em)]">
         <div className="flex flex-col gap-4  w-full h-max list-none p-8">
           {searchitem &&
             data &&
@@ -94,8 +80,8 @@ export default function List() {
               )
             )}
           {!searchitem &&
-            currentList &&
-            currentList.map((item) => (
+            paginatedData &&
+            paginatedData.map((item) => (
               <>
                 <li className="font-mono flex justify-between gradient-animation items-center h-max shadow-black shadow-xl rounded-md p-2 bg-gray-600">
                   <p className="w-[8em] sm:w-full  h-max break-words">
@@ -130,15 +116,25 @@ export default function List() {
         </div>
 
         <div className="mx-auto w-max h-max flex items-center justify-center ">
-          <ReactPaginate
-            breakLabel="..."
-            nextLabel="next >"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={5}
-            pageCount={pageCount}
-            previousLabel="< previous"
-            renderOnZeroPageCount={null}
-          />
+          {/* <div className="flex justify-center mt-4"> */}
+          <ul className="flex space-x-2 mb-4">
+            {Array.from({
+              length: Math.ceil(data.length / itemsPerPage),
+            }).map((_, index) => (
+              <li
+                key={index}
+                onClick={() => handlePageChange(index + 1)}
+                className={`cursor-pointer p-2 rounded-full ${
+                  currentPage === index + 1
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-600"
+                }`}
+              >
+                {index + 1}
+              </li>
+            ))}
+          </ul>
+          {/* </div> */}
         </div>
       </div>
     </div>
