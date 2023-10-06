@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="h-screen bg-back bg-cover bg-no-repeat overflow-hidden text-white">
       <Form />
-      {/* <List /> */}
+      <List />
     </main>
   );
 }
