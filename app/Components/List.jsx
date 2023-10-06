@@ -111,7 +111,6 @@ export default function List() {
                     <p>{item.definition}</p>
                   </div>
                 )}
-                y
               </>
             ))}
         </div>
