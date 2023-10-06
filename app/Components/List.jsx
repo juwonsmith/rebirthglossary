@@ -148,7 +148,7 @@ export default function List() {
         </div>
 
         <div className="mx-auto w-max h-max flex items-center justify-center ">
-          {test && (
+          {/* {test && (
             <ReactPaginate
               breakLabel="..."
               nextLabel={curr === pageCount ? "" : ">>>"}
@@ -163,7 +163,8 @@ export default function List() {
               nextLinkClassName="page-num"
               activeLinkClassName="active"
             />
-          )}
+          )} */}
+          <p>Hello world</p>
         </div>
       </div>
     </div>
