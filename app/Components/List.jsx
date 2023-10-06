@@ -132,17 +132,12 @@ export default function List() {
         <div className="mx-auto w-max h-max flex items-center justify-center ">
           <ReactPaginate
             breakLabel="..."
-            nextLabel={curr === pageCount ? "" : ">>>"}
+            nextLabel="next >"
             onPageChange={handlePageClick}
-            pageRangeDisplayed={2}
+            pageRangeDisplayed={5}
             pageCount={pageCount}
-            previousLabel={curr === 1 ? "" : "<<<"}
+            previousLabel="< previous"
             renderOnZeroPageCount={null}
-            containerClassName="pagination"
-            pageLinkClassName="page-num"
-            previousLinkClassName="page-num"
-            nextLinkClassName="page-num"
-            activeLinkClassName="active"
           />
         </div>
       </div>
