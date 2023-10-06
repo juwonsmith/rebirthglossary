@@ -40,9 +40,9 @@ export default function List() {
     }
   };
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-full">
       <div className="mt-10 mb-10 bg-gradient-to-l overflow-hidden from-[#0679e04d] to-[#0636e04d] shadow-white shadow-lg  mx-auto rounded-md h-max w-[calc(100%-8em)] sm:w-[calc(100%-20em)] lg:w-[calc(100%-40em)]">
-        <div className="flex flex-col gap-4  w-full h-max list-none p-8">
+        <div className="flex flex-col gap-4 overflow-hidden w-full h-max list-none p-8">
           {searchitem &&
             data &&
             check(data.filter((item) => pattern.test(item.term))).map(
